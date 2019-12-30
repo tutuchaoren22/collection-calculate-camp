@@ -1,6 +1,8 @@
 function collect_same_elements(collection_a, collection_b) {
-    //在这里写入代码
-    return collection_b[0].filter(item => collection_a.includes(item))
+    return findSameElement(collection_a, collection_b[0]);
 }
 
+function findSameElement(collection_a, collection_b) {
+    return collection_a.filter(item => collection_b.includes(item));
+}
 module.exports = collect_same_elements;
