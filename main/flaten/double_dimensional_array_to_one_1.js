@@ -3,18 +3,18 @@
 function double_to_one(collection) {
 
     //在这里写入代码
-    var res = flatten(collection);
-    return res
+    var oneDimensional = flattenToOneDimensional(collection);
+    return oneDimensional;
 }
 
-function flatten(arr, result = []) {
+function flattenToOneDimensional(arr, result = []) {
     for (let item of arr) {
         if (Array.isArray(item))
-            flatten(item, result)
+            flattenToOneDimensional(item, result);
         else
-            result.push(item)
+            result.push(item);
     }
-    return result
+    return result;
 }
 
 module.exports = double_to_one;
