@@ -2,6 +2,11 @@
 
 function get_integer_interval_2(number_a, number_b) {
     //在这里写入代码
+    res = calulation(number_a, number_b);
+    return res;
+}
+
+function calulation(number_a, number_b) {
     var number_c = number_b - number_a;
     var res;
     if (number_c > 0) {
@@ -12,8 +17,8 @@ function get_integer_interval_2(number_a, number_b) {
         res = f3(number_a, number_b);
     }
     return res;
-}
 
+}
 
 function f1(number_a, number_b) {
     var res = [];
