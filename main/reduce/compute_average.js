@@ -9,11 +9,20 @@ function compute_average(collection) {
     // var averageNumber = sum / collection.length;
 
     // 方法二：利用reduce来累加求和；
+    var sum = computeSum(collection);
+    var averageNumber = computeAvg(sum, collection.length);
+    return averageNumber;
+}
+
+function computeSum(collection) {
     var sum = collection.reduce(function(x, y) {
         return x + y;
     });
-    var averageNumber = sum / collection.length;
-    return averageNumber;
+    return sum;
+}
+
+function computeAvg(sum, num) {
+    return sum / num;
 }
 
 module.exports = compute_average;
