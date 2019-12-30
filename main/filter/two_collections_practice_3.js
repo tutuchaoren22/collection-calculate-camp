@@ -3,7 +3,7 @@
 function choose_divisible_integer(collection_a, collection_b) {
 
     //在这里写入代码
-    var ress = collection_a.filter(
+    var divisibleElements = collection_a.filter(
         function(item) {
             var i;
             for (i in collection_b) {
@@ -14,6 +14,6 @@ function choose_divisible_integer(collection_a, collection_b) {
             }
         }
     );
-    return ress;
+    return divisibleElements;
 }
 module.exports = choose_divisible_integer;
