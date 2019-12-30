@@ -3,23 +3,24 @@
 function double_to_one(collection) {
 
     //在这里写入代码
-    var res = flatten(collection);
-    return res.filter(
-        function(value, index, self) {
-            return self.indexOf(value) === index;
-        }
-    );
+    var oneDimensional = flattenToOneDimensional(collection);
+    var deduplicationOneDimensional = deduplication(oneDimensional);
+    return deduplicationOneDimensional;
 }
 
-function flatten(arr, result = []) {
+function flattenToOneDimensional(arr, result = []) {
     for (let item of arr) {
         if (Array.isArray(item))
-            flatten(item, result)
+            flattenToOneDimensional(item, result);
         else
-            result.push(item)
+            result.push(item);
     }
-    return result
+    return result;
 }
 
-
+function deduplication(array) {
+    return array.filter(function(value, index, self) {
+        return self.indexOf(value) === index;
+    });
+}
 module.exports = double_to_one;
