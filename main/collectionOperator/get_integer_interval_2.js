@@ -12,7 +12,6 @@ function get_integer_interval_2(number_a, number_b) {
         res = f3(number_a, number_b);
     }
     return res;
-
 }
 
 
@@ -43,4 +42,6 @@ function f3(number_a, number_b) {
         return [];
     }
 }
+
+
 module.exports = get_integer_interval_2;
