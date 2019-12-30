@@ -5,11 +5,11 @@ function collect_same_elements(collection_a, object_b) {
 }
 
 function findKeyValue(collection_a) {
-    var res = [];
+    var keyValue = [];
     for (var i in collection_a) {
-        res.push(collection_a[i].key);
+        keyValue.push(collection_a[i].key);
     }
-    return res;
+    return keyValue;
 }
 
 
