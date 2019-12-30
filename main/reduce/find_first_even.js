@@ -1,8 +1,17 @@
 'use strict';
 
 function find_first_even(collection) {
-  //在这里写入代码
+    //在这里写入代码
+    var evenAll = findAllEven(collection);
+    var firstEven = findFirstEven(evenAll);
+    return firstEven;
 }
 
-module.exports = find_first_even;
+function findAllEven(collection) {
+    return collection.filter(item => (item % 2 === 0));
+}
 
+function findFirstEven(collection) {
+    return collection[0];
+}
+module.exports = find_first_even;
