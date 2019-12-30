@@ -1,7 +1,12 @@
 'use strict';
 
-function spilt_to_zero(number, interval) {
-  //在这里写入代码
+function split_to_zero(number, interval) {
+    var infiniteDivision = [];
+    while (number > Number.EPSILON) {
+        infiniteDivision.push(number);
+        number = parseFloat((number - interval).toFixed(1));
+    }
+    infiniteDivision.push(number);
+    return infiniteDivision;
 }
-
-module.exports = spilt_to_zero;
+module.exports = split_to_zero;
