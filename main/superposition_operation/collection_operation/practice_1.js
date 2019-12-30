@@ -9,7 +9,6 @@ function hybrid_operation(collection) {
 function multiplyThreeAddTwo(collection) {
     var afterMultiplyThreeAddTwo = collection.map(item => (item * 3 + 2));
     return afterMultiplyThreeAddTwo;
-
 }
 
 function sumOperation(collection) {
