@@ -3,15 +3,15 @@
 function grouping_count(collection) {
 
     //在这里写入代码
-    var res = {};
+    var groupCount = {};
     for (var i = 0; i < collection.length; i++) {
-        if (collection[i] in res) {
-            res[collection[i]]++;
+        if (collection[i] in groupCount) {
+            groupCount[collection[i]]++;
         } else {
-            res[collection[i]] = 1;
+            groupCount[collection[i]] = 1;
         }
     }
-    return res;
+    return groupCount;
 }
 
 module.exports = grouping_count;
