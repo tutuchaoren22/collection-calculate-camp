@@ -3,9 +3,7 @@
 function even_to_letter(collection) {
 
     var evenInCollection = findEvenInCollection(collection);
-    var evenToLetter = evenInCollection.map(
-        item => String.fromCharCode(0x60 + item)
-    );
+    var evenToLetter = transferEvenToLetter(evenInCollection);
     return evenToLetter;
 }
 
