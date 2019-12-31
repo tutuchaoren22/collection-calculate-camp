@@ -32,6 +32,5 @@ function transferToLetter(number) {
     } else {
         return String.fromCharCode((number - 1) / 26 + 96) + String.fromCharCode((number - 1) % 26 + 97);
     }
-
 }
 module.exports = get_letter_interval_2;
