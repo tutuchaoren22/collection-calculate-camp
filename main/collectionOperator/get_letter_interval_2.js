@@ -13,14 +13,14 @@ function get_letter_interval_2(number_a, number_b) {
     } else if (number_a > number_b) {
         return decreaseInterval(number_a, number_b);
     } else {
-        return [str[number_a]];
+        return [String.fromCharCode(number_a + 96)];
     }
 }
 
 function increaseInterval(number_a, number_b) {
     var resultInterval = [];
     for (var i = number_a; i <= number_b; i++) {
-        resultInterval.push(str[i]);
+        resultInterval.push(String.fromCharCode(i + 96));
     }
     return resultInterval;
 }
@@ -28,7 +28,7 @@ function increaseInterval(number_a, number_b) {
 function decreaseInterval(number_a, number_b) {
     var resultInterval = [];
     for (var i = number_a; i >= number_b; i--) {
-        resultInterval.push(str[i]);
+        resultInterval.push(String.fromCharCode(i + 96));
     }
     return resultInterval;
 }
