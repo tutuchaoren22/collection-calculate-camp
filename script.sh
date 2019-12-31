@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 npm i
 npm test
-
