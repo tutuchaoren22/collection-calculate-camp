@@ -1,7 +1,6 @@
 'use strict';
 
 function find_first_even(collection) {
-    //在这里写入代码
     var evenAll = findAllEven(collection);
     var firstEven = findFirstEven(evenAll);
     return firstEven;

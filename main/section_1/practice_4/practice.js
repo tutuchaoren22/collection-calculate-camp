@@ -1,7 +1,7 @@
 function collect_same_elements(collection_a, object_b) {
-    var collection_a = findKeyValue(collection_a);
-    var collection_b = object_b.value;
-    return findSameElement(collection_a, collection_b);
+    var newCollection_a = findKeyValue(collection_a);
+    var newCollection_b = object_b.value;
+    return findSameElement(newCollection_a, newCollection_b);
 }
 
 function findKeyValue(collection_a) {

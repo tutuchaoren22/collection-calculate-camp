@@ -1,8 +1,6 @@
 'use strict';
 
 function grouping_count(collection) {
-
-    //在这里写入代码
     var groupCount = {};
     for (var i = 0; i < collection.length; i++) {
         if (collection[i] in groupCount) {

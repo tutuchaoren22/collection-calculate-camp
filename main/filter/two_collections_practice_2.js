@@ -1,8 +1,6 @@
 'use strict';
 
 function choose_no_common_elements(collection_a, collection_b) {
-
-    //在这里写入代码
     var aNotIncludeB = differentElements(collection_a, collection_b)
     var bNotIncludeA = differentElements(collection_b, collection_a)
     return aNotIncludeB.concat(bNotIncludeA);
