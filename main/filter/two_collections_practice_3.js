@@ -1,7 +1,7 @@
 'use strict';
 
 function choose_divisible_integer(collection_a, collection_b) {
-    var divisibleElements = collection_a.filter(
+    return collection_a.filter(
         function(item) {
             var i;
             for (i in collection_b) {
@@ -12,6 +12,6 @@ function choose_divisible_integer(collection_a, collection_b) {
             }
         }
     );
-    return divisibleElements; //TODO: 这里变量直接inline
+    //return divisibleElements; //TODO: 这里变量直接inline
 }
 module.exports = choose_divisible_integer;

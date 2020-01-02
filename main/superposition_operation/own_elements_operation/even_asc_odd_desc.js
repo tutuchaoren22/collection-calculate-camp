@@ -4,8 +4,8 @@ var even_asc_odd_desc = function(collection) {
     var oddElements = selectOdd(collection);
     evenElements.sort(ascendingOrder);
     oddElements.sort(deascendingOrder);
-    var newSortElements = evenElements.concat(oddElements);
-    return newSortElements; //TODO: 这里直接inline就好
+    return evenElements.concat(oddElements);
+    // return newSortElements; //TODO: 这里直接inline就好
 };
 
 function selectEven(collection) {

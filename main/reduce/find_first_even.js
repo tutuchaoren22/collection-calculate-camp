@@ -2,8 +2,8 @@
 
 function find_first_even(collection) {
     var evenAll = findAllEven(collection);
-    var firstEven = findFirstEven(evenAll);
-    return firstEven; //TODO: 这里变量直接inline
+    return findFirstEven(evenAll);
+    // return firstEven; //TODO: 这里变量直接inline
 }
 
 function findAllEven(collection) {

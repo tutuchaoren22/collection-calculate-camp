@@ -7,13 +7,13 @@ function choose_no_common_elements(collection_a, collection_b) {
 }
 
 function differentElements(collection_a, collection_b) {
-    var diffElements = collection_a.filter(
+    return collection_a.filter(
         function(item) {
             if (collection_b.indexOf(item) === -1) {
                 return item;
             }
         }
     );
-    return diffElements; //TODO: 这里变量直接inline
+    //return diffElements; //TODO: 这里变量直接inline
 }
 module.exports = choose_no_common_elements;

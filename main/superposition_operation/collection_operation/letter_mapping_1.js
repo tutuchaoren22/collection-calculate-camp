@@ -3,8 +3,8 @@
 function even_to_letter(collection) {
 
     var evenInCollection = findEvenInCollection(collection);
-    var evenToLetter = transferEvenToLetter(evenInCollection);
-    return evenToLetter; //TODO: 这里直接inline就好
+    return transferEvenToLetter(evenInCollection);
+    // return evenToLetter; //TODO: 这里直接inline就好
 }
 
 function findEvenInCollection(collection) {

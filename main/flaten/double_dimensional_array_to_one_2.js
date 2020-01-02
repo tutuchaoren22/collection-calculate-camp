@@ -2,8 +2,8 @@
 
 function double_to_one(collection) {
     var oneDimensional = flattenToOneDimensional(collection);
-    var deduplicationOneDimensional = deduplication(oneDimensional);
-    return deduplicationOneDimensional; //TODO: 这里变量直接inline
+    return deduplication(oneDimensional);
+    // return deduplicationOneDimensional; //TODO: 这里变量直接inline
 }
 
 function flattenToOneDimensional(arr, result = []) {

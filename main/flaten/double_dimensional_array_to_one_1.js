@@ -1,8 +1,8 @@
 'use strict';
 
 function double_to_one(collection) {
-    var oneDimensional = flattenToOneDimensional(collection);
-    return oneDimensional; //TODO: 这里变量直接inline
+    return flattenToOneDimensional(collection);
+    //return oneDimensional; //TODO: 这里变量直接inline
 }
 
 function flattenToOneDimensional(arr, result = []) {

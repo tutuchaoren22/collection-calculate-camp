@@ -2,8 +2,8 @@
 
 function compute_chain_median(collection) {
     var chainArray = chainToArray(collection);
-    var median = computeMedian(chainArray);
-    return median; //TODO: 这里变量直接inline
+    return computeMedian(chainArray);
+    // return median; //TODO: 这里变量直接inline
 }
 
 function chainToArray(chain) {

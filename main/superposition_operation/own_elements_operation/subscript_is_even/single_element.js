@@ -1,8 +1,8 @@
 'use strict';
 var single_element = function(collection) {
     var oddIndexElements = findOddIndexElements(collection);
-    var singleElements = deduplication(oddIndexElements);
-    return singleElements; //TODO: 这里直接inline就好
+    return deduplication(oddIndexElements);
+    // return singleElements; //TODO: 这里直接inline就好
 };
 
 function findOddIndexElements(collection) {

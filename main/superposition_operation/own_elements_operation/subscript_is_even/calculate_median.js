@@ -1,8 +1,8 @@
 'use strict';
 var calculate_median = function(collection) {
     var oddIndexElements = findOddIndexElements(collection);
-    var medianOddIndex = medianNumber(oddIndexElements);
-    return medianOddIndex; //TODO: 这里直接inline就好
+    return medianNumber(oddIndexElements);
+    // return medianOddIndex; //TODO: 这里直接inline就好
 
 };
 

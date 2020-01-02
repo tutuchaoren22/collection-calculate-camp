@@ -7,8 +7,8 @@ function even_group_calculate_average(collection) {
         return [0];
     } else {
         var arrayGroupByDigit = groupByDigit(evenElements);
-        var averageNumber = computeArrayAvg(arrayGroupByDigit);
-        return averageNumber; //TODO: 这里直接inline就好
+        return computeArrayAvg(arrayGroupByDigit);
+        // return averageNumber; //TODO: 这里直接inline就好
     }
 };
 
@@ -54,10 +54,10 @@ function computeAvg(collection) {
 
 
 function computeSum(collection) {
-    var sum = collection.reduce(function(x, y) {
+    return collection.reduce(function(x, y) {
         return x + y;
     });
-    return sum; //TODO: 这里直接inline就好
+    // return sum; //TODO: 这里直接inline就好
 }
 
 module.exports = even_group_calculate_average;
