@@ -4,14 +4,14 @@ function average_to_letter(collection) {
     var sum = computeSum(collection);
     var averageNumber = computeAvg(sum, collection.length);
     var numberToLetter = transferEvenToLetter(averageNumber);
-    return numberToLetter;
+    return numberToLetter; //TODO: 这里直接inline就好
 }
 
 function computeSum(collection) {
     var sum = collection.reduce(function(x, y) {
         return x + y;
     });
-    return sum;
+    return sum; //TODO: 这里直接inline就好
 }
 
 function computeAvg(sum, num) {

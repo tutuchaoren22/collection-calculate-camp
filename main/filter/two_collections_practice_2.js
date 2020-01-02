@@ -14,6 +14,6 @@ function differentElements(collection_a, collection_b) {
             }
         }
     );
-    return diffElements;
+    return diffElements; //TODO: 这里变量直接inline
 }
 module.exports = choose_no_common_elements;

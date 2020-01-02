@@ -1,7 +1,7 @@
 function create_updated_collection(collection_a, object_b) {
     var collectionCount = computeCount(collection_a);
     var collectionUpdated = createUpdatedCollection(collectionCount, object_b)
-    return collectionUpdated;
+    return collectionUpdated; //TODO: 这里直接inline就好
 }
 
 function computeCount(collection) {

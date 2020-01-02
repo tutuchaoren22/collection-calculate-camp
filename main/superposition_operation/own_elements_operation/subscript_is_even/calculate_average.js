@@ -4,7 +4,7 @@ function calculate_average(collection) {
     var oddIndexElements = findOddIndexElements(collection);
     var sum = computeSum(oddIndexElements);
     var averageNumber = computeAvg(sum, oddIndexElements.length);
-    return averageNumber;
+    return averageNumber; //TODO: 这里直接inline就好
 
 };
 
@@ -20,7 +20,7 @@ function computeSum(collection) {
     var sum = collection.reduce(function(x, y) {
         return x + y;
     });
-    return sum;
+    return sum; //TODO: 这里直接inline就好
 }
 
 function computeAvg(sum, num) {

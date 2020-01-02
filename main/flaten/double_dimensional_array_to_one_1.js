@@ -2,7 +2,7 @@
 
 function double_to_one(collection) {
     var oneDimensional = flattenToOneDimensional(collection);
-    return oneDimensional;
+    return oneDimensional; //TODO: 这里变量直接inline
 }
 
 function flattenToOneDimensional(arr, result = []) {

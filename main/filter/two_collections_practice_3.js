@@ -12,6 +12,6 @@ function choose_divisible_integer(collection_a, collection_b) {
             }
         }
     );
-    return divisibleElements;
+    return divisibleElements; //TODO: 这里变量直接inline
 }
 module.exports = choose_divisible_integer;

@@ -3,7 +3,7 @@
 function find_last_even(collection) {
     var evenAll = findAllEven(collection);
     var lastEven = findLastEven(evenAll);
-    return lastEven;
+    return lastEven; //TODO: 这里变量直接inline
 }
 
 function findAllEven(collection) {

@@ -1,5 +1,6 @@
 'use strict';
 
+//TODO: 抽方法很好！
 function get_integer_interval(number_a, number_b) {
     if (number_a < number_b) {
         return increaseInterval(number_a, number_b);

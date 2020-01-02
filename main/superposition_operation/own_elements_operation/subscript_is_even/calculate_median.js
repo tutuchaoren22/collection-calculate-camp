@@ -2,7 +2,7 @@
 var calculate_median = function(collection) {
     var oddIndexElements = findOddIndexElements(collection);
     var medianOddIndex = medianNumber(oddIndexElements);
-    return medianOddIndex;
+    return medianOddIndex; //TODO: 这里直接inline就好
 
 };
 
